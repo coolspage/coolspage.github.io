@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转中...</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        text-align: center;
+        color: #411214;
+        font-size: 32px;
+        padding: 24px;
+    }
+
+    a {
+        color: #ff7579;
+    }
+</style>
+
+<body>
+
+    <form name=loading>
+        <div class="title">正在火速前往Cool的藏宝阁...</div>
+        <div class="title">ε=ε=ε=(~ﾟдﾟ)~</div>
+        <div class="title">快记住本站域名: <a href="http://😜.eu.org">😜.eu.org</a></div>
+        <input type=text name=chart size=100
+            style="font-size: 32px;width: 100%;;background-color:#fef4d9; padding:5px;border-radius: 5px; border-style:none;">
+
+        <input type=text name=percent size=0
+            style="padding-top: 32px;font-size: 32px;width: 100%;color:#ff7579; text-align:center;  border-style:none;">
+
+        <script>
+            var bar = 0
+            var line = "😜"
+            var amount = "😜"
+            count()
+            function count() {
+                bar = bar + 3
+                amount = amount + line
+                document.loading.chart.value = amount
+                document.loading.percent.value = bar + "%"
+                if (bar < 99) { setTimeout("count()", 100); }
+                else { window.location = "http://angelacool.eu.org:666"; }
+            }</script>
+
+        </p>
+    </form>
+</body>
+
+</html>
